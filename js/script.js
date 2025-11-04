@@ -36,12 +36,12 @@ const simon = document.getElementById("simon");
 const piger = document.getElementById("piger");
 const drenge = document.getElementById("drenge");
 
-if (simon) {
-  const soundSimon = new Audio("sound/simon.mp3");
-  simon.addEventListener("click", function () {
-    soundSimon.play();
-  });
-}
+// if (simon) {
+ // const soundSimon = new Audio("sound/simon.mp3");
+ // simon.addEventListener("click", function () {
+  //  soundSimon.play();
+ // });
+// }
 
 if (piger) {
   const soundPiger = new Audio("sound/piger.mp3");
@@ -56,4 +56,10 @@ if (drenge) {
     soundDrenge.play();
   });
 }
+const soundSimon = new Audio("sound/simon.mp3");
+  simon.addEventListener("click", () => {
+    soundSimon.play();
+    simon.classList.remove("animate");
+    simon.classList.toggle("anim-scale");
+  });
 
