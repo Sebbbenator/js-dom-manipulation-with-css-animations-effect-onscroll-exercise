@@ -40,21 +40,21 @@ const drenge = document.getElementById("drenge");
 const soundDrenge = new Audio("sound/drenge.mp3");
 drenge.addEventListener("click", () => {
   soundDrenge.play();
-  drenge.classList.remove("animate");
+  drenge.classList.toggle("animate");
   drenge.classList.toggle("anim-scale");
 });
 
 const soundPiger = new Audio("sound/piger.mp3");
 piger.addEventListener("click", () => {
   soundPiger.play();
-  piger.classList.remove("animate");
+  piger.classList.toggle("animate");
   piger.classList.toggle("anim-scale");
 });
 
 const soundSimon = new Audio("sound/simon.mp3");
 simon.addEventListener("click", () => {
   soundSimon.play();
-  simon.classList.remove("animate");
+  simon.classList.toggle("animate");
   simon.classList.toggle("anim-scale");
 });
 
