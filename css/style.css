@@ -32,6 +32,13 @@ section {
 .sec2 {
   background-color: rgb(255, 0, 85);
 }
+.sec5 {
+  background-color: #255091;
+}
+
+.sec6 {
+  background-color: #4caf50;
+}
 
 h1 {
   font-size: 90px;
@@ -60,6 +67,8 @@ p {
 .sec4 p {
   color: #056964;
 }
+
+
 
 .sec5 .images {
   display: flex;
@@ -162,3 +171,25 @@ p.animate {
   transform: rotateY(195deg);
 }
 
+.sec6 .animate {
+  /* Starttilstand */
+  opacity: 0;
+  transform: translateY(200px) rotate(80deg);
+  transition: all 0.8s ease;
+}
+
+.sec6.show-animate .animate {
+  /* Sluttilstand */
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+.sec6.show-animate .animate.anim-bounce {
+  transform: translateY(-40px) scale(2.8) rotate(20deg);
+}
+
+
+
+.sec5 .images img.animate {
+  cursor: pointer;
+}
